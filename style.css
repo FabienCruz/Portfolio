@@ -12,8 +12,8 @@ body {
     --text: black;
     --logoBox: #00288C;
     --readingText: rgba(0,0,0,0.75);
-    --highlight: deeppink;
-    --shadow: #00288C;
+    --highlight: #00288C;
+    --shadow: deeppink;
 }
 
 main {
@@ -116,15 +116,48 @@ article p {
     color: var(--readingText);
 }
 
+article li {
+    margin-top: 0.5em;
+    font-family:'Spartan', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: var(--readingText);
+}
+
+article strong {
+    color: var(--text);
+}
+
+article a {
+    color: var(--text);
+}
+
+article a:hover {
+    color: var(--shadow);
+    transition:all ease-out 2s;
+}
+
 .more {
     color: var(--highlight);
 }
+
 .more:hover {
     font-weight: bold;
     text-shadow: 2px 2px var(--shadow);
     transition: all ease-in-out 0.5s;
 }
 
-.invisible {
-  display: none;
+
+
+.content img {
+    max-width: 100%;
+}
+
+.content h2 {
+    margin: 2em 0;
+    color: var(--highlight);
+}
+
+.content h3, h4, h5, h6 {
+    margin: 2em 0;
 }
